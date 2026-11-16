@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puntos de venta | Birria Mix</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="brand">
+    <img src="img/logo.png" alt="Logo Birria Mix">
+    <span>Birria Mix</span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+  <nav class="nav" id="mainNav">
+    <a href="index.html">Inicio</a>
+    <a href="index.html#historia">Nuestra historia</a>
+    <a href="index.html#producto">Producto</a>
+    <a href="municipios.html" class="active">Puntos de venta</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <span class="eyebrow">ENCUENTRA NUESTRO SABOR</span>
+    <h1>¿Dónde puedes encontrar Birria Mix?</h1>
+    <p>Explora nuestras localidades y encuentra el establecimiento más cercano.</p>
+  </section>
+
+  <section class="section locations-section">
+    <div class="search-box">
+      <input type="search" id="locationSearch" placeholder="Buscar una localidad...">
+      <span>⌕</span>
+    </div>
+
+    <div class="location-grid" id="locationGrid">
+
+      <a class="location-card" href="puntos.html?zona=arandas" data-name="arandas">
+        <img src="img/arandas.jpg" alt="Arandas">
+        <div><span>01</span><h2>Arandas</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=jesus-maria" data-name="jesus maria">
+        <img src="img/jesus-maria.jpg" alt="Jesús María">
+        <div><span>02</span><h2>Jesús María</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=san-ignacio" data-name="san ignacio san ignacio cerro gordo">
+        <img src="img/san-ignacio.jpg" alt="San Ignacio">
+        <div><span>03</span><h2>San Ignacio</h2><p>San Ignacio Cerro Gordo, Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=atotonilco" data-name="atotonilco">
+        <img src="img/atotonilco.jpg" alt="Atotonilco">
+        <div><span>04</span><h2>Atotonilco</h2><p>Atotonilco el Alto, Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=san-francisco" data-name="san francisco de asis">
+        <img src="img/san-francisco.jpg" alt="San Francisco de Asís">
+        <div><span>05</span><h2>San Francisco de Asís</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=ayotlan" data-name="ayotlan">
+        <img src="img/ayotlan.jpg" alt="Ayotlán">
+        <div><span>06</span><h2>Ayotlán</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=degollado" data-name="degollado">
+        <img src="img/degollado.jpg" alt="Degollado">
+        <div><span>07</span><h2>Degollado</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=santa-ana" data-name="santa ana pacueco">
+        <img src="img/santa-ana-pacueco.jpg" alt="Santa Ana Pacueco">
+        <div><span>08</span><h2>Santa Ana Pacueco</h2><p>Guanajuato</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=san-miguel" data-name="san miguel el alto">
+        <img src="img/san-miguel.jpg" alt="San Miguel el Alto">
+        <div><span>09</span><h2>San Miguel el Alto</h2><p>Jalisco</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=chapala" data-name="chapala ajijic san antonio tlayacapan">
+        <img src="img/zona-chapala.jpg" alt="Chapala y alrededores">
+        <div><span>10</span><h2>Chapala y alrededores</h2><p>Chapala, Ajijic y San Antonio Tlayacapan</p></div>
+      </a>
+
+      <a class="location-card" href="puntos.html?zona=tepatitlan" data-name="tepatitlan de morelos">
+        <img src="img/tepatitlan.jpg" alt="Tepatitlán">
+        <div><span>11</span><h2>Tepatitlán</h2><p>Tepatitlán de Morelos, Jalisco</p></div>
+      </a>
+
+    </div>
+    <p class="no-results" id="noLocations" hidden>No encontramos esa localidad.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="img/logo.png" alt="Birria Mix">
+  <p>Birria Mix · Fácil, rápido y casero.</p>
+  <small>El sabor de los Altos de Jalisco.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
